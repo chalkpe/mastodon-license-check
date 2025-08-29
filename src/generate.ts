@@ -33,7 +33,7 @@ const schema = z.object({
 async function main() {
   const { nodes } = schema.parse(await request(endpoint, query))
   await writeFile(
-    resolve(__dirname, '..', 'data', 'nodes.json'),
+    resolve(__dirname, '..', 'nodes.json'),
     JSON.stringify(
       nodes
         .filter((n) => n.monthsmonitored <= 12 && (n.countryname === 'South Korea' || n.detectedlanguage === 'ko'))

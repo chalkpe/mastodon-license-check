@@ -1,4 +1,4 @@
-import nodes from '../data/nodes.json'
+import nodes from '../nodes.json'
 import { test, expect } from '@playwright/test'
 
 test.describe(() =>
