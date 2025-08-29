@@ -1,0 +1,30 @@
+{
+  "name": "mastodon-license-check",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "tsx src/generate.ts && playwright test"
+  },
+  "author": "Chalk",
+  "license": "AGPL-3.0-only",
+  "packageManager": "pnpm@10.14.0-0",
+  "dependencies": {
+    "graphql": "^16.11.0",
+    "graphql-request": "^7.2.0",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.3.0",
+    "prettier": "^3.6.2",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "printWidth": 170
+  }
+}
